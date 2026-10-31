@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mahmoud Salem – System Administrator Proposal</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+  :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+  html{scroll-behavior:smooth;scroll-padding-top:72px;background:#0a1220}
+  body{background:#0a1220;color:#cbd5e1;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+  .card{background:#0f1b2e;border:1px solid #1e3150;border-radius:14px}
+  .glow:hover{border-color:#22d3ee;box-shadow:0 0 0 1px #22d3ee33,0 8px 30px #22d3ee14}
+  .grid-bg{background-image:linear-gradient(#1e315033 1px,transparent 1px),linear-gradient(90deg,#1e315033 1px,transparent 1px);background-size:36px 36px}
+  .tab.active{background:#22d3ee;color:#04101f}
+  pre{overflow-x:auto}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="fixed top-0 inset-x-0 z-40 backdrop-blur bg-[#0a1220]/85 border-b border-[#1e3150]" style="padding-top:env(safe-area-inset-top,0px)">
+  <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+    <a href="#top" class="font-bold text-white tracking-tight">MS<span class="text-cyan-400">.sysadmin</span></a>
+    <div class="hidden md:flex gap-6 text-sm">
+      <a class="hover:text-cyan-400" href="#skills">Skills</a>
+      <a class="hover:text-cyan-400" href="#projects">Projects</a>
+      <a class="hover:text-cyan-400" href="#roadmap">Roadmap</a>
+      <a class="hover:text-cyan-400" href="#contact">Contact</a>
+    </div>
+    <button id="menuBtn" class="md:hidden text-cyan-400 text-xl" aria-label="Menu">☰</button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden px-4 pb-3 flex flex-col gap-2 text-sm">
+    <a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#roadmap">Roadmap</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="top" class="grid-bg pt-28 pb-16">
+  <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-5 gap-8 items-center">
+    <div class="lg:col-span-3">
+      <p class="font-mono text-cyan-400 text-sm mb-3">&gt; internal_promotion --target "System Administrator"</p>
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight">Mahmoud Salem</h1>
+      <p class="mt-2 text-lg text-slate-400">IT Helpdesk <span class="text-cyan-400">→</span> System Administrator · Dakahlia Group</p>
+      <p class="mt-5 text-slate-300 max-w-2xl leading-relaxed">Highly organized IT professional passionate about Automation, Systems Engineering, and operational efficiency. Seeking to leverage system administration expertise, automation scripts, and cloud competencies to scale Dakahlia Group’s infrastructure.</p>
+      <div class="mt-6 flex flex-wrap gap-2 text-xs font-semibold">
+        <span class="px-3 py-1 rounded-full bg-cyan-400/10 text-cyan-300 border border-cyan-400/30">AZ-900 Certified</span>
+        <span class="px-3 py-1 rounded-full bg-red-400/10 text-red-300 border border-red-400/30">RHCSA Trained</span>
+        <span class="px-3 py-1 rounded-full bg-blue-400/10 text-blue-300 border border-blue-400/30">Windows Server &amp; Linux</span>
+        <span class="px-3 py-1 rounded-full bg-emerald-400/10 text-emerald-300 border border-emerald-400/30">Scripting &amp; Automation</span>
+      </div>
+      <div class="mt-8 flex gap-3">
+        <a href="#projects" class="px-5 py-2.5 rounded-lg bg-cyan-400 text-[#04101f] font-semibold hover:bg-cyan-300">View Accomplishments</a>
+        <a href="#contact" class="px-5 py-2.5 rounded-lg border border-[#1e3150] hover:border-cyan-400">Let’s Talk</a>
+      </div>
+    </div>
+    <!-- Dashboard-style stat panel -->
+    <div class="lg:col-span-2 card p-5 font-mono text-sm">
+      <div class="flex items-center gap-2 mb-4"><span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-emerald-400"></span><span class="ml-2 text-slate-500 text-xs">status.ps1</span></div>
+      <div class="grid grid-cols-2 gap-3">
+        <div class="card p-3"><div class="text-2xl text-cyan-400 font-bold" data-count="11">0</div><div class="text-xs text-slate-500">Projects delivered</div></div>
+        <div class="card p-3"><div class="text-2xl text-cyan-400 font-bold" data-count="4">0</div><div class="text-xs text-slate-500">Certifications</div></div>
+        <div class="card p-3"><div class="text-2xl text-cyan-400 font-bold" data-count="3">0</div><div class="text-xs text-slate-500">Roadmap initiatives</div></div>
+        <div class="card p-3"><div class="text-2xl text-emerald-400 font-bold">0</div><div class="text-xs text-slate-500">Target manual errors</div></div>
+      </div>
+      <p class="mt-4 text-emerald-400">✔ Automation-first mindset</p>
+      <p class="text-emerald-400">✔ Hands-on enterprise experience</p>
+    </div>
+  </div>
+</header>
+
+<!-- SKILLS -->
+<section id="skills" class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-2xl sm:text-3xl font-bold text-white">Certifications &amp; Core Competencies</h2>
+  <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="card glow p-5 transition"><div class="text-2xl">☁️</div><h3 class="mt-2 font-semibold text-white">Azure Fundamentals (AZ-900)</h3><p class="text-sm text-slate-400 mt-1">Microsoft Certified — recently achieved.</p></div>
+    <div class="card glow p-5 transition"><div class="text-2xl">🐧</div><h3 class="mt-2 font-semibold text-white">Red Hat System Administrator (RHCSA)</h3><p class="text-sm text-slate-400 mt-1">Completed RH124 (Admin 1) &amp; RH134 (Admin 2).</p></div>
+    <div class="card glow p-5 transition"><div class="text-2xl">🪟</div><h3 class="mt-2 font-semibold text-white">MCSA</h3><p class="text-sm text-slate-400 mt-1">Microsoft Windows Server foundation.</p></div>
+    <div class="card glow p-5 transition"><div class="text-2xl">🌐</div><h3 class="mt-2 font-semibold text-white">CCNA 200-301</h3><p class="text-sm text-slate-400 mt-1">Networking fundamentals &amp; routing/switching.</p></div>
+  </div>
+  <h3 class="mt-10 text-sm font-mono tracking-widest text-slate-500">HANDS-ON PLATFORMS</h3>
+  <div class="mt-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="card glow p-5 transition"><div class="text-2xl">🖥️</div><h3 class="mt-2 font-semibold text-white">VMware ESXi</h3><p class="text-sm text-slate-400 mt-1">Managed virtual machine provisioning.</p></div>
+    <div class="card glow p-5 transition"><div class="text-2xl">💾</div><h3 class="mt-2 font-semibold text-white">Veeam Backup &amp; Replication</h3><p class="text-sm text-slate-400 mt-1">Applied backup retention concepts.</p></div>
+    <div class="card glow p-5 transition"><div class="text-2xl">✉️</div><h3 class="mt-2 font-semibold text-white">Google Admin</h3><p class="text-sm text-slate-400 mt-1">Create and manage user emails.</p></div>
+    <div class="card glow p-5 transition"><div class="text-2xl">📊</div><h3 class="mt-2 font-semibold text-white">FortiAnalyzer</h3><p class="text-sm text-slate-400 mt-1">Network traffic analysis.</p></div>
+    <div class="card glow p-5 transition"><div class="text-2xl">☎️</div><h3 class="mt-2 font-semibold text-white">Issabel</h3><p class="text-sm text-slate-400 mt-1">Create extensions to run IP telephony.</p></div>
+    <div class="card glow p-5 transition"><div class="text-2xl">🎫</div><h3 class="mt-2 font-semibold text-white">Zoho Ticketing System</h3><p class="text-sm text-slate-400 mt-1">Helpdesk ticket management.</p></div>
+  </div>
+  <div class="mt-8 flex flex-wrap gap-2 text-sm">
+    <span class="px-3 py-1.5 card">Windows Server Administration</span><span class="px-3 py-1.5 card">Active Directory &amp; GPO</span><span class="px-3 py-1.5 card">Linux (RHEL)</span><span class="px-3 py-1.5 card">VMware ESXi</span><span class="px-3 py-1.5 card">Veeam Backup &amp; Replication</span><span class="px-3 py-1.5 card">PowerShell &amp; Batch</span><span class="px-3 py-1.5 card">WDS / iVentoy</span><span class="px-3 py-1.5 card">ManageEngine MDM</span><span class="px-3 py-1.5 card">Google Admin</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-2xl sm:text-3xl font-bold text-white">Key Accomplishments &amp; Implemented Projects</h2>
+  <p class="text-slate-400 mt-1">Filter by category.</p>
+  <div id="tabs" class="mt-6 flex flex-wrap gap-2 text-sm font-semibold"></div>
+  <div id="projectGrid" class="mt-6 grid md:grid-cols-2 gap-5 items-stretch"></div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap" class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-2xl sm:text-3xl font-bold text-white">Proposed Future Initiatives &amp; System Roadmap</h2>
+  <div id="roadmapList" class="mt-6 grid md:grid-cols-2 gap-5"></div>
+</section>
+
+<!-- CONTACT -->
+<footer id="contact" class="border-t border-[#1e3150] grid-bg">
+  <div class="max-w-3xl mx-auto px-4 py-20 text-center">
+    <h2 class="text-3xl font-bold text-white">Get in Touch</h2>
+    <p class="mt-4 text-slate-300 leading-relaxed">I have spent my time at Dakahlia Group learning how our systems run and where manual work creates risk. I would welcome the opportunity to discuss how I can contribute as a System Administrator: automating repetitive tasks, hardening our environment, and building infrastructure that scales with the group.</p>
+    <div class="mt-8 grid sm:grid-cols-3 gap-3 text-left">
+      <a href="mailto:mahmoud.salem@dakahlia.net" class="card glow p-4 transition block"><div class="text-xs font-mono text-cyan-400">EMAIL</div><div class="mt-1 text-sm text-white break-all">mahmoud.salem@dakahlia.net</div></a>
+      <a href="https://www.linkedin.com/in/mahmoudsaleem/" target="_blank" rel="noopener noreferrer" class="card glow p-4 transition block"><div class="text-xs font-mono text-cyan-400">LINKEDIN</div><div class="mt-1 text-sm text-white break-all">in/mahmoudsaleem</div></a>
+      <a href="https://wa.me/201097266604" target="_blank" rel="noopener noreferrer" class="card glow p-4 transition block"><div class="text-xs font-mono text-cyan-400">PHONE / WHATSAPP</div><div class="mt-1 text-sm text-white">01097266604</div></a>
+    </div>
+    <p class="mt-10 text-xs text-slate-500">© Mahmoud Salem · Internal promotion proposal · Dakahlia Group</p>
+  </div>
+</footer>
+
+<script>
+/* ---------- DATA ---------- */
+const projects = [
+ {t:"Windows 11 [Dakahlia Edition]",c:"Deployment",i:"💿",d:"Engineered a fully automated, unattended custom Windows 11 deployment image pre-loaded with standard enterprise applications.",m:"Standardized endpoint builds across Dakahlia Group, eliminated manual installation errors, and significantly reduced deployment time."},
+ {t:"WDS & iVentoy PXE Deployment",c:"Deployment",i:"🌐",d:"Implemented network-based deployment infrastructure replacing physical USB boot devices.",m:"Eliminated USB boot media hardware failures and reduced security risks."},
+ {t:"AD & HR (Alpha) Reconciliation Macro",c:"Automation",i:"🔁",d:"Built an Excel macro to compare external HR (Alpha) sheets against Active Directory objects before data updates.",m:"Generates automated pre-sync discrepancy reports, ensuring zero configuration errors in AD."},
+ {t:"Granular Branch Policy Enforcement (Temry)",c:"Security",i:"🛡️",d:"Authored scripts enforcing local admin setup with non-expiring approved passwords, restricting unauthorized USB usage, disabling Mobile Hotspots and Windows Update, and blocking social media bandwidth usage.",m:"Consistent, enforceable baseline across all Temry branches."},
+ {t:"Password Never Expires Audit",c:"Security",i:"🔑",d:"Developed a custom PowerShell script to identify user accounts with PasswordNeverExpires enabled across the domain.",m:"Gives a repeatable compliance view of risky accounts."},
+ {t:"GPO Application Deployment",c:"Automation",i:"📦",d:"Automated silent application deployments (FortiClient & ClickShare) via Group Policy Objects.",m:"No touching individual machines; consistent installs at scale."},
+ {t:"Enterprise Hardware & MDM Integration",c:"Infrastructure",i:"📱",d:"Participated in ManageEngine MDM setup and mobile device troubleshooting.",m:"Managed, supportable mobile fleet."},
+ {t:"Logitech Meeting Systems – Natron",c:"Infrastructure",i:"🎥",d:"Supervised deployment and setup of Logitech Meeting Systems at the Natron facility.",m:"Delivered working meeting-room infrastructure on site."},
+ {t:"Systems Documentation & Operations",c:"Infrastructure",i:"📚",d:"Consolidated all Temry branch infrastructure data into a unified Master Sheet.",m:"Single source of truth for branch infrastructure."},
+ {t:"MikroTik Site-to-Site IPSec VPN",c:"Networking",i:"🔗",d:"Participated in configuring MikroTik to connect Temry branches with the HQ by enabling IPSec VPN.",m:"Secure connectivity between Temry branches and the HQ."},
+ {t:"pfSense Initial Deployment",c:"Networking",i:"🧱",d:"Installed pfSense as an initial attempt to connect Temry branches with the HQ. The project was not completed and was replaced by MikroTik.",m:"Hands-on pfSense experience gained while evaluating connectivity options."},
+];
+const roadmap = [
+ {t:"Zabbix Enterprise Infrastructure Monitoring",b:"Replace PRTG with open-source Zabbix for deeper monitoring, custom triggers, and cost optimization.",s:["Pilot on a few servers/branches","Build templates and custom triggers","Migrate alerts and retire PRTG"]},
+ {t:"Oracle DB Automated Maintenance",b:"Create scheduled tasks that clean the Temp Directory automatically, with no manual intervention.",s:["Define retention rules","Script and schedule the cleanup","Log results and alert on failure"]},
+ {t:"Zoho Ticketing System Restructuring",b:"Reorder, reclassify, and restructure the categories in the Zoho ticketing system.",s:["Review current categories and ticket data","Design a cleaner category structure","Apply the new structure and update routing"]},
+ {t:"Advanced Automation Expansion",b:"Expand PowerShell automation across onboarding workflows and compliance auditing.",s:["Automate new-user onboarding","Schedule recurring compliance audits","Standardize a shared script library"]}
+];
+
+/* ---------- NAV ---------- */
+document.getElementById('menuBtn').onclick = () => document.getElementById('mobileMenu').classList.toggle('hidden');
+document.querySelectorAll('#mobileMenu a').forEach(a => a.onclick = () => document.getElementById('mobileMenu').classList.add('hidden'));
+
+/* ---------- COUNTERS ---------- */
+document.querySelectorAll('[data-count]').forEach(el => {
+  const end = +el.dataset.count; let n = 0;
+  const id = setInterval(() => { n++; el.textContent = n; if (n >= end) clearInterval(id); }, 90);
+});
+
+/* ---------- PROJECT FILTER + MODAL ---------- */
+const cats = ["All", ...new Set(projects.map(p => p.c))];
+let active = "All";
+const tabs = document.getElementById('tabs'), grid = document.getElementById('projectGrid');
+function renderTabs() {
+  tabs.innerHTML = "";
+  cats.forEach(c => {
+    const b = document.createElement('button');
+    b.textContent = c;
+    b.className = "tab px-4 py-1.5 rounded-full border border-[#1e3150] " + (c === active ? "active" : "hover:border-cyan-400");
+    b.onclick = () => { active = c; renderTabs(); renderProjects(); };
+    tabs.appendChild(b);
+  });
+}
+const catStyle = {
+  Deployment:{bar:"from-cyan-400 to-blue-500",tile:"bg-cyan-400/10 border-cyan-400/30",pill:"text-cyan-300 bg-cyan-400/10 border-cyan-400/30"},
+  Automation:{bar:"from-violet-400 to-fuchsia-500",tile:"bg-violet-400/10 border-violet-400/30",pill:"text-violet-300 bg-violet-400/10 border-violet-400/30"},
+  Security:{bar:"from-amber-400 to-orange-500",tile:"bg-amber-400/10 border-amber-400/30",pill:"text-amber-300 bg-amber-400/10 border-amber-400/30"},
+  Networking:{bar:"from-teal-400 to-emerald-500",tile:"bg-teal-400/10 border-teal-400/30",pill:"text-teal-300 bg-teal-400/10 border-teal-400/30"},
+  Infrastructure:{bar:"from-sky-400 to-indigo-500",tile:"bg-sky-400/10 border-sky-400/30",pill:"text-sky-300 bg-sky-400/10 border-sky-400/30"}
+};
+function renderProjects() {
+  grid.innerHTML = "";
+  projects.forEach((p, idx) => {
+    if (active !== "All" && p.c !== active) return;
+    const st = catStyle[p.c];
+    const el = document.createElement('article');
+    el.className = "card glow relative overflow-hidden transition flex flex-col";
+    el.innerHTML = `
+      <div class="h-1 w-full bg-gradient-to-r ${st.bar}"></div>
+      <div class="p-6 flex flex-col flex-1">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 shrink-0 rounded-xl border ${st.tile} flex items-center justify-center text-2xl">${p.i}</div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-2 text-xs">
+              <span class="font-mono text-slate-500">#${String(idx + 1).padStart(2, "0")}</span>
+              <span class="px-2 py-0.5 rounded-full border font-semibold ${st.pill}">${p.c}</span>
+            </div>
+            <h3 class="mt-1 text-lg font-bold text-white leading-snug">${p.t}</h3>
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="text-[11px] font-mono tracking-widest text-slate-500 mb-1">WHAT I DID</div>
+          <p class="text-sm text-slate-300 leading-relaxed">${p.d}</p>
+        </div>
+        <div class="mt-5 pt-5 border-t border-dashed border-[#1e3150] mt-auto">
+          <div class="rounded-xl p-4 bg-gradient-to-br from-emerald-400/15 to-emerald-400/0 border border-emerald-400/25 flex gap-3">
+            <div class="w-8 h-8 shrink-0 rounded-full bg-emerald-400 text-[#04101f] flex items-center justify-center font-bold">✓</div>
+            <div>
+              <div class="text-[11px] font-mono tracking-widest text-emerald-300">IMPACT</div>
+              <p class="mt-0.5 text-sm text-slate-100 leading-relaxed">${p.m}</p>
+            </div>
+          </div>
+        </div>
+      </div>`;
+    grid.appendChild(el);
+  });
+}
+renderTabs(); renderProjects();
+
+/* ---------- ROADMAP ACCORDION ---------- */
+const rl = document.getElementById('roadmapList');
+roadmap.forEach((r, i) => {
+  const d = document.createElement('div'); d.className = "card glow p-6 transition";
+  d.innerHTML = `<span class="font-mono text-cyan-400 text-sm">Initiative ${i + 1}</span>
+    <h3 class="mt-1 text-lg font-bold text-white leading-snug">${r.t}</h3>
+    <p class="mt-3 text-sm text-slate-300 leading-relaxed">${r.b}</p>
+    <ol class="mt-4 space-y-1 text-sm text-slate-400 list-decimal list-inside">${r.s.map(x => `<li>${x}</li>`).join("")}</ol>`;
+  rl.appendChild(d);
+});
+</script>
+</body>
+</html>
